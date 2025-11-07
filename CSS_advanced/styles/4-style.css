@@ -1,10 +1,11 @@
-/* Define font size variables */
+/* Define custom properties (CSS variables) */
 :root {
-    --font-size-small: 1.2rem;
-    --font-size-medium: 1.6rem;
-    --font-size-large: 1.8rem;
-    --font-size-x-large: 2.3rem;
-    --font-size-xx-large: 4.8rem;
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
 }
 
 /* This style ensure that the html scrolls smoothly */
@@ -35,16 +36,6 @@ a {
 /* Section tagline color */
 .section-tagline {
     color: #D73953;
-}
-
-/* Define custom properties (CSS variables) */
-:root {
-    --color-primary: #d73953;
-    --color-black: #090909;
-    --color-white: #ffffff;
-    --color-light-grey: #f3f3f3;
-    --color-dark-grey: #353535;
-    --text-color: var(--color-black);
 }
 
 /* Body text color */
