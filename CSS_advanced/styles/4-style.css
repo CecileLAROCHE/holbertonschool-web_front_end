@@ -1,0 +1,83 @@
+/* This style ensure that the html scrolls smoothly */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body text color */
+body {
+    color: #161616;
+}
+
+/* Links color */
+a {
+    color: #161616;
+}
+
+/* Hide visually-hidden elements */
+.visually-hidden {
+    display: none;
+}
+
+/* Card category color */
+.card-category {
+    color: #D73953;
+}
+
+/* Section tagline color */
+.section-tagline {
+    color: #D73953;
+}
+
+/* Define custom properties (CSS variables) */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+}
+
+/* Body text color */
+body {
+    color: var(--text-color);
+}
+
+/* Links color */
+a {
+    color: var(--text-color);
+}
+
+/* Hide visually-hidden elements */
+.visually-hidden {
+    display: none;
+}
+
+/* Card category color */
+.card-category {
+    color: var(--color-primary);
+}
+
+/* Section tagline color */
+.section-tagline {
+    color: var(--color-primary);
+}
+
+/* Define font size variables */
+:root {
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+}
+
+/* Set base font size for the whole document */
+html {
+    font-size: 62.5%;
+}
+
+/* Apply medium font size to body text */
+body {
+    font-size: var(--font-size-medium);
+}
