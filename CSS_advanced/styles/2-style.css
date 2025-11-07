@@ -1,3 +1,8 @@
+/* This style ensure that the html scrolls smoothly */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Body text color */
 body {
     color: #161616;
