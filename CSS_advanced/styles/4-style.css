@@ -1,3 +1,12 @@
+/* Define font size variables */
+:root {
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+}
+
 /* This style ensure that the html scrolls smoothly */
 html {
     scroll-behavior: smooth;
@@ -61,15 +70,6 @@ a {
 /* Section tagline color */
 .section-tagline {
     color: var(--color-primary);
-}
-
-/* Define font size variables */
-:root {
-    --font-size-small: 1.2rem;
-    --font-size-medium: 1.6rem;
-    --font-size-large: 1.8rem;
-    --font-size-x-large: 2.3rem;
-    --font-size-xx-large: 4.8rem;
 }
 
 /* Set base font size for the whole document */
