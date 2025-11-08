@@ -166,7 +166,7 @@ nav .nav-item {
 
 nav .nav-link {
     display: block;
-    padding: 0.5rem 1rem; /* la moitié du root en haut/bas, entier à gauche/droite */
+    padding: 0.5rem 1rem;
 }
 
 nav .nav-link:hover {
