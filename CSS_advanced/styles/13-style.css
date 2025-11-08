@@ -29,6 +29,25 @@ html {
     font-size: 62.5%;
 }
 
+a:link {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:visited {
+    font-style: italic;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    background-color: var(--color-light-grey);
+}
+
+
 body {
     color: #161616;
     color: var(--text-color);
@@ -78,23 +97,3 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--section-title-color);
 }
 
-/* Target only anchor elements that contain a hyperlink */
-a[href] {
-    color: var(--text-color);
-    text-decoration: none;
-}
-
-/* Visited state */
-a[href]:visited {
-    font-style: italic;
-}
-
-/* Hover state */
-a[href]:hover {
-    text-decoration: underline;
-}
-
-/* Active state */
-a[href]:active {
-    background-color: var(--color-light-grey);
-}
