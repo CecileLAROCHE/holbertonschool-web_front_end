@@ -37,8 +37,10 @@
     --nav-item-letter-spacing: 0.04rem;
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 3rem 0;
-    --nav-item-link-hover: var(--color-white);
+    --nav-item-link-hover: var(--color-white); /* corrigé */
     --section-tagline-margin: 0;
+
+    /* Button variables */
     --button-display: inline-block;
     --button-padding: 1.5rem 3rem;
     --button-border: 0.2rem solid var(--color-primary);
@@ -48,6 +50,8 @@
     --button-hover-color: var(--color-white);
     --button-hover-text-decoration: none;
     --button-hover-background: var(--color-primary);
+
+    /* Header variables */
     --header-padding: 4rem 0 0;
     --header-logo-position: relative;
     --header-logo-link-display: inline-block;
@@ -146,6 +150,7 @@ a:active {
     margin-right: auto;
 }
 
+/* Header */
 .header {
     padding: var(--header-padding);
 }
@@ -161,6 +166,7 @@ a:active {
     left: var(--header-logo-link-left);
 }
 
+/* Navbar */
 .navbar-menu {
     float: right;
 }
@@ -186,11 +192,7 @@ a:active {
     padding: 0.5rem 1rem;
 }
 
-.nav .nav-link:hover {
-    color: var(--nav-item-link-hover);
-}
-
-/* Before pseudo-elements of nav-link inside nav */
+/* Pseudo-elements before nav-link */
 .nav .nav-link::before {
     content: "";
     position: absolute;
@@ -201,12 +203,16 @@ a:active {
     height: 20%;
 }
 
-/* Hover state of nav-link's before pseudo-elements when nav-item is hovered */
 .nav .nav-item:hover .nav-link::before {
     background-color: var(--color-primary);
     width: 100%;
 }
 
+.nav .nav-link:hover {
+    color: var(--nav-item-link-hover);
+}
+
+/* Grid */
 ul.row {
     margin: 0;
     padding: 0;
@@ -233,6 +239,7 @@ ul.row {
     clear: both;
 }
 
+/* Cards Services */
 .card-services .card-title {
     margin: 0;
 }
@@ -250,6 +257,7 @@ ul.row {
     text-decoration: none;
 }
 
+/* Cards Testimonial */
 .card-testimonial {
     text-align: center;
 }
@@ -266,6 +274,7 @@ ul.row {
     color: var(--color-primary);
 }
 
+/* Button */
 .button {
     display: var(--button-display);
     padding: var(--button-padding);
@@ -281,18 +290,9 @@ ul.row {
     background-color: var(--button-hover-background);
 }
 
-.section-hero {
-    width: 90rem;
-    height: auto;
-    background-size: 90rem auto;
-}
-
-.section-hero .section-title {
-    margin-bottom: 5rem;
-}
-
-.section-hero .section-inner {
-    padding: 10rem 40rem 2rem 0;
+/* Footer */
+.footer {
+    padding: var(--footer-padding);
 }
 
 .footer-copyright {
@@ -305,10 +305,6 @@ ul.row {
     text-align: right;
 }
 
-.footer {
-    padding: var(--footer-padding);
-}
-
 .footer-address {
     color: var(--text-color);
 }
@@ -317,6 +313,6 @@ ul.row {
     display: block;
 }
 
-.social-link svg {
+.social-link > svg {
     fill: var(--text-color);
 }
